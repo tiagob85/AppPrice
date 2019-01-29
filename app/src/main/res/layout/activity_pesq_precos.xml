@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesqPrecosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Seção :"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <Spinner
+            android:id="@+id/SpinPesqSecao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Produtos :"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <Spinner
+            android:id="@+id/SpinPesqProduto"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Marca :"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <Spinner
+            android:id="@+id/SpinPesqMarca"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/BtnPesqPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="Pesquisar" />
+
+        <Button
+            android:id="@+id/BtnPesqLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Limpar pesquisa" />
+
+        <Button
+            android:id="@+id/BtnPesqNovo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo Preço" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

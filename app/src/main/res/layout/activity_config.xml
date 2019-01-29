@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <Button
+            android:id="@+id/BtnConfigCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="ButtonEvent"
+            android:text="Cadastrar Produtos" />
+
+        <Button
+            android:id="@+id/BtnConfigMarcas"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="ButtonEvent"
+            android:text="Cadastrar Marcas" />
+
+        <Button
+            android:id="@+id/BtnConfigSecao"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="ButtonEvent"
+            android:text="Cadastrar seção" />
+
+        <Button
+            android:id="@+id/BtnConfigMercados"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="ButtonEvent"
+            android:text="Cadastrar mercados" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
