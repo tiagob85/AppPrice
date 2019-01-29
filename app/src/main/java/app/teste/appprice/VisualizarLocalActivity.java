@@ -7,16 +7,14 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-public class VisualizarSecaoActivity extends Activity implements Config {
-
+public class VisualizarLocalActivity extends Activity implements Config{
     private ListView lista;
     Cursor cursor;
     BancoController crud;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visualizar_secao);
+        setContentView(R.layout.activity_visualizar_local);
         initComponents();
     }
 
@@ -24,12 +22,12 @@ public class VisualizarSecaoActivity extends Activity implements Config {
     public void initComponents() {
         crud = new BancoController(getBaseContext());
         cursor = null;
-        cursor = crud.carregaDados(2);
+        cursor = crud.carregaDados(3);
 
         String[] nomeCampos = new String[]{"_id", "nome"};
-        int[] idVieews = new int[]{R.id.codsecao, R.id.nmSecao};
+        int[] idVieews = new int[]{R.id.codlocal, R.id.nmLocal};
 
-        SimpleCursorAdapter adaptador  = new SimpleCursorAdapter(getBaseContext(), R.layout.activity_visualizar_secao, cursor,
+        SimpleCursorAdapter adaptador  = new SimpleCursorAdapter(getBaseContext(), R.layout.activity_visualizar_local, cursor,
                 nomeCampos, idVieews, 0);
         lista = (ListView)findViewById(R.id.ListaView2);
         lista.setAdapter(adaptador);
